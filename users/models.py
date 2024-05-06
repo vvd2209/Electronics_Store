@@ -10,7 +10,6 @@ class User(AbstractUser):
 
     email = models.EmailField(unique=True, verbose_name='email')
 
-
     USERNAME_FIELD = "email"  # указание на то, что поле "email" будет использоваться для идентификации пользователя
     REQUIRED_FIELDS = []  # поля, которые будут запрашиваться при создании пользователя через команду createsuperuser
 
